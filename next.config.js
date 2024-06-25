@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/marcus-hayes.github.io",
   reactStrictMode: true,
   images: {
     unoptimized: true,

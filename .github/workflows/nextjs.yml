@@ -80,15 +80,13 @@ jobs:
       - name: Echo
         run: |
           echo "$GITHUB_OUTPUT"
-          echo "$GITHUB_CONTEXT"
-          echo "$INPUT_CONTEXT"
           pwd
-          ls ..
+          ls .next
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{GITHUB_OUTPUT}}/out
+          path: /out
 
   # Deployment job
   deploy:

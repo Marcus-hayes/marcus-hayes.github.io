@@ -82,7 +82,9 @@ jobs:
           echo "$GITHUB_OUTPUT"
           echo "$GITHUB_CONTEXT"
           echo "$INPUT_CONTEXT"
-          ls
+          pwd
+          ls ..
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
